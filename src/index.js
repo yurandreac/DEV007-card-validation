@@ -1,3 +1,29 @@
 import validator from './validator.js';
-
-console.log(validator);
+const cardNumber = document.getElementById('card-number');
+const validateButton = document.getElementById("validateButton")
+const message = document.getElementById("message")
+const messageIcon = document.getElementById("message-icon")
+const cardNumberRegex = /^\d+$/;
+validateButton.addEventListener("click", () => {  
+  if(cardNumber.value === ""){
+    message.innerHTML = "Por favor ingrese el número de tarjeta que desea validar."
+    messageIcon.innerHTML = `⚠`  
+  }else {
+    if(cardNumberRegex.test(cardNumber.value)){
+      const cardNumberArray = cardNumber.value.split('')
+      const validatingCard = validator.isValid(cardNumberArray)
+      const numberMaskify = validator.maskify(cardNumberArray)
+        if(validatingCard){
+          message.innerHTML = `Su tarjeta número ${numberMaskify} es válida.`
+          messageIcon.innerHTML = `✔`
+        }else{
+          message.innerHTML = `Su tarjeta número ${numberMaskify}  no es válida.`
+          messageIcon.innerHTML = `❌`
+        }
+    } else {
+      message.innerHTML = "Solo se puede validar números"
+      messageIcon.innerHTML = `⚠`  
+    }
+  }
+cardNumber.value = ""
+})
