@@ -2,12 +2,12 @@
 
 El validador de tarjétas es un sitio web que nos permite saber si el número de una tarjeta de crédito es válida o no, es una herramienta que se puede usar para verificar la viabilidad de compras y ventas en internet, o para recargar un cobro fijo mensual.
 
-##Cómo funciona?
-###Pasos:
+## Cómo funciona?
+### Pasos:
 * El usuario ingresa en el campo el número de tarjeta que requiere validar.
 * Le da click en el botón "VALIDAR".
 
-##Funcionalidades y Respuestas:
+## Funcionalidades y Respuestas:
 
 * **Campo vacio:** si el usuario le da click al botón "VALIDAR" pero aún no ha ingresado ningún número, aparecerá debajo del campo para ingresar el número, un mensaje que dice: "Por favor ingrese el número de tarjeta que desea validar" y abajo aparecerá un icono de alerta.   
 
@@ -18,14 +18,14 @@ El validador de tarjétas es un sitio web que nos permite saber si el número de
 * **Número de tarjeta válido:** si el usuario ingresa un número y al dar click en el botón "VALIDAR" resulta que el número de tarjeta es válido, entonces la tarjeta se tornará de color verde y abajo del campo aparecerá un mensaje en el que solo serán visibles los 4 últimos números de la tarjeta que se validó Ejemplo: "Su tarjeta número ############1234 es válida" y en la parte de abajo un ícono de "✔".
 
 
-##Experiencia de usuario
+## Experiencia de usuario
 
 El validador de tarjetas tiene un diseño sencillo y fácil de utilizar, consiste en una tarjeta con un unico campo en donde el usuario ingresa el número y un botón "VALIDAR" que al hacer hover cambia de color y el cursor se convierte en una mano, llamando al usuario a hacer click.
 Al darle click, valida la información arrojando un mensaje como respuesta según sea el caso.
 
 También pensando en la  experiencia de usuario se planteó el cambio de color de la tarjeta según sea la respuesta de la validación, asumiendo que el color amarillo denota alerta, el rojo error y el verde aceptación, lo anterior acompañado de un ícono que indicará lo mismo(⚠-❌-✔).
 
-##Proceso de creación y ejecución del proyecto
+## Proceso de creación y ejecución del proyecto
 
 El proyecto se planteó primero de forma visual mediante un [prototipo en Figma ](https://www.figma.com/file/ybFUwnWTJBHgr1HSpuCLhP/Card-Validation?node-id=2%3A27&t=RsKbXVYOQOU7ulsH-1), en donde definí la información, los colores y las diferentres vistas, luego planteé la estructura en HTML, seguido de una parte de la funcionalidad en el archivo "validator.js", y "index.js", luego me concentré   en "CSS" pero cuando retomé la funcionalidad en el "index.js", me sentí un poco confundida con el flujo y tuve que volver a Figma y diagramar el flujo y todas las posibles situaciones que se generarian en el proceso del usuario, esto me sirvió bastante para terminar la lógica, tuve que replantear algunas cosas del diseño en la aplicación de los colores según la respuesta de la validación, en futuros proyectos creo que tener claro este flujo y caminos será lo primero que haga.
 Corrí los test y me sentí feliz de que la mayoría corrieran satisfactoriamente, y en una sesión de test camp pude encontrar la falla y corregir y poder así pasar todos los test.
@@ -33,7 +33,7 @@ Ya llegando al final aprendí un poco de markdown, a hacer commit, push y a desp
 
 
 
-##Conclusiones y aprendizajes
+## Conclusiones y aprendizajes
 
 Este proyecto ha sido un gran reto para mi,  a nivel de aprendizaje debido a barreras y limitaciones tecnológicas que algunas veces percibo, teniendo que esforzar mi mente a aprender algo totalmente nuevo y exponer este producto tecnológico; también fué un reto a nivel personal y emocional, porque me enfrenté a temas como la optimización del tiempo para poder cumplir con mi vida y mis deberes a nivel familiar, sorteando mis miedos, mis frustaciones y mis bloqueos, permitiendome preguntar, buscar ayuda, ánimo, consejos, recibír feedback, etc.
 Me siento agradecida y satisfecha por este proyecto,espero seguir avanzando en el mundo tech  aunque sea nuevo y difícil, me genera gran expectativa, esperanza y emoción.
