@@ -12,10 +12,7 @@ const validator = {
       }
       return numeroEvaluado * 1
     })
-    const initValue = 0
-    const totalSumCardNumbers = numberReversedAndMultiplied.reduce((acum, currentValue) => {
-      return acum + currentValue
-    }, initValue )
+    const totalSumCardNumbers = numberReversedAndMultiplied.reduce((acum, currentValue) => acum + currentValue, 0 )
     if(totalSumCardNumbers % 10 === 0){
       return true
     }else{
